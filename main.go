@@ -6,14 +6,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/omegasuite/btcd/blockchain"
-	"github.com/omegasuite/btcd/chaincfg"
-	"github.com/omegasuite/btcd/chaincfg/chainhash"
-	"github.com/omegasuite/btcd/wire"
-	"github.com/omegasuite/btcd/wire/common"
-	"github.com/omegasuite/btcutil"
-	"github.com/omegasuite/btcutil/base58"
-	"github.com/omegasuite/omega/token"
+	"github.com/zeusyf/btcd/blockchain"
+	"github.com/zeusyf/btcd/chaincfg"
+	"github.com/zeusyf/btcd/chaincfg/chainhash"
+	"github.com/zeusyf/btcd/wire"
+	"github.com/zeusyf/btcd/wire/common"
+	"github.com/zeusyf/btcutil"
+	"github.com/zeusyf/btcutil/base58"
+	"github.com/zeusyf/omega/token"
 	"math/big"
 	_ "net/http/pprof"
 	"os"
@@ -113,9 +113,9 @@ func main() {
 	fmt.Printf("// This is generated code. Should not be manually modified.\n\n" +
 		"package omega" +
 		"\n\nimport (\n\t\"time\"" +
-		"\n\t\"github.com/omegasuite/btcd/chaincfg/chainhash\"" +
-		"\n\t\"github.com/omegasuite/btcd/wire\"" +
-		"\n\t\"github.com/omegasuite/omega/token\"\n)\n\n" +
+		"\n\t\"github.com/zeusyf/btcd/chaincfg/chainhash\"" +
+		"\n\t\"github.com/zeusyf/btcd/wire\"" +
+		"\n\t\"github.com/zeusyf/omega/token\"\n)\n\n" +
 		"var IntlDateLine = [][2]float64 {	// international date line")
 	for _, v := range vertices {
 		fmt.Printf("\n\t{ %f, %f },", v.Lat, v.Lng)
